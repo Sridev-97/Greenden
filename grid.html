@@ -1,0 +1,91 @@
+<style>
+
+body{
+    background-color: blueviolet;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    background-color: #C4ECF9;
+    display: grid;
+    grid-template-rows: 2fr 7fr 2fr;
+    width: fit-content
+}
+.header{
+    background-color: #03BFB2;
+    color: white;
+    margin: 8px;
+    font-size: 25px;
+    font-weight: bold;
+    height: 50px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.middle{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.aside{
+    background-color: #6EDA6D;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 10px;
+}
+
+.article{
+    background-color: #F2B259;
+    height: auto;
+    display: grid;     
+    font-size: 20px;
+    font-weight: 600;color: white;
+    margin: 10px;
+}
+.image-cont{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+.image{
+    background-color: #FDD24A;
+    font-size: 20px;
+    font-weight: 600;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    height: auto;
+    width: 120px;
+}
+
+.text{
+    display: grid;
+    align-items: last baseline;
+    justify-content: center;
+}
+</style>
+
+<div class="page">
+
+<div class="container">
+    <div class="header">Header</div>
+    <div class="middle">
+        <div class="aside">Aside</div>
+        <div class="article"><div class="text">Article</div>
+            <div class="image-cont">
+            <div class="image">Image</div>
+            <div class="image">Image</div>
+            <div class="image">Image</div>
+        </div>
+        </div>
+    </div>
+    <div class="header">Footer</div>
+</div>
+</div>

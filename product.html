@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <title>Greenden</title>
+</head>
+
+<body>
+    <!--Responsive Navbar-->
+    <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
+        <h1 class="text-2xl">GREENDEN</h1>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="w-6 h-6 md:hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+        <ul class="gap-5 text-gray-600 hidden md:flex">
+            <li><a href="index.html" class="hover:underline hover:text-black">Home</a></li>
+            <li><a href="product.html" class="hover:underline hover:text-black">Products</a></li>
+            <li><a href="contact.html" class="hover:underline  hover:text-black">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!--Product Search-->
+    <section class="p-4 text-center">
+        <h1 class="text-3xl font-bold mt-5">Our Products</h1>
+        <div class="m-10">
+            <input placeholder="Search for a Product..." class="border border-black w-full p-2">
+        </div>
+    </section>
+
+    <!--products-->
+    <section class="p-4 text-center">       
+
+        <div class="grid grid-cols-2 md:grid-cols-4 mt-5">
+            <div>
+                <img src="./images/bs_1.jpg" alt="Best Seller 1" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <h1>Rose Plant</h1>
+                <p>$20</p>
+            </div>
+            <div>
+                <img src="./images/bs_2.jpg" alt="Best Seller 2" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <h1>Dahlia</h1>
+                <p>$20</p>
+            </div>
+            <div>
+                <img src="./images/bs_5.jpg" alt="Best Seller 3" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <h1>florist's cyclamen</h1>
+                <p>$20</p>
+            </div>
+            <div>
+                <img src="./images/bs_4.jpg" alt="Best Seller 4" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <h1>astilbe plant</h1>
+                <p>$20</p>
+            </div>
+            <div>
+                <img src="./images/bs_3.jpg" alt="Best Seller 1" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <h1>Rose Plant</h1>
+                <p>$20</p>
+            </div>
+            <div>
+                <img src="./images/bs_4.jpg" alt="Best Seller 2" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <h1>Dahlia</h1>
+                <p>$20</p>
+            </div>
+            <div>
+                <img src="./images/bs_1.jpg" alt="Best Seller 3" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <h1>florist's cyclamen</h1>
+                <p>$20</p>
+            </div>
+            <div>
+                <img src="./images/bs_2.jpg" alt="Best Seller 4" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <h1>astilbe plant</h1>
+                <p>$20</p>
+            </div>
+        </div>
+    </section>
+
+        <!--Footer-->
+        <footer class="bg-green-100 p-4 ">
+            <h1 class="text-4xl font-bold mt-5 m-5">Greenden</h1>
+            <p class="m-5">The Standard chunk of Lorem ipsum since the 1500s is reprodused below for those interest</p>
+            <div class="m-5">
+                <p>&copy;Greenday.com</p>
+            </div>
+        </footer>
+    </body>
+</html>
