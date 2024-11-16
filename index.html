@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
     <title>Greenden</title>
+    <link rel="icon" href="./images/G_3.png">
     <script>
         function toggleMenu() {
             const menu = document.getElementById('dropdownMenu');
@@ -18,24 +19,39 @@
     <!--Responsive Navbar-->
     <nav class="bg-green-900 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
         <img class="md:hidden" src="./images/G_2sm.png">
-        <img class="hidden md:block" src="./images/G_2.png">
+        <img class="hidden md:block w-80 h-20" src="./images/G_2.png">
 
         <!-- Menu icon for mobile screens -->
-        <button onclick="toggleMenu()" class="md:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-6 h-6 text-white">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
-        </button>
+        <div class="md:hidden flex justify-center gap-3  text-white">
+            <button onclick="toggleMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+            <a href="login.html"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="md:hidden w-8 h-8">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                </svg>
+            </a>
+        </div>
 
         <ul class="gap-5 text-white hidden md:flex">
             <li><a href="index.html" class="hover:underline hover:text-black text-2xl">Home</a></li>
             <li><a href="product.html" class="hover:underline hover:text-black text-2xl">Products</a></li>
             <li><a href="contact.html" class="hover:underline  hover:text-black text-2xl">Contact</a></li>
+            <li><a href="login.html"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                    </svg></a> </li>
         </ul>
 
+
         <!-- Dropdown Menu for small screens (hidden initially) -->
-        <div id="dropdownMenu" class="hidden absolute text-white top-16 right-0 bg-green-800 p-4 rounded-lg shadow-lg">            
+        <div id="dropdownMenu" class="hidden absolute text-white top-16 right-0 bg-green-800 p-4 rounded-lg shadow-lg">
             <a href="index.html" class="block hover:underline hover:text-black text-xl py-2">Home</a>
             <a href="product.html" class="block hover:underline hover:text-black text-xl py-2">Products</a>
             <a href="contact.html" class="block hover:underline  hover:text-black text-xl py-2">Contact</a>
@@ -48,8 +64,11 @@
             <p class="mb-4">We Offer you a wide range of Artificial and Natural Flowers</p>
             <h2 class="font-bold text-3xl md:text-5xl mb-5">Plans for your Interior</h2>
             <div>
-                <button class="bg-yellow-400 rounded p-2 text-black">Shop Now</button>
-                <button class="border border-gray-400 rounded p-2">Watch Video</button>
+                <a href="product.html"><button class="bg-yellow-400 rounded p-2 text-black hover:bg-gray-100">Shop Now</button></a>
+
+                <a href="https://www.youtube.com/watch?v=NdVVFdeIMrE" target="_blank">
+                    <button class="border border-gray-400 rounded p-2 hover:bg-black">Watch Video</button>
+                </a>
             </div>
             <p class="mt-5">160+ Plant Species | 100+ Clients</p>
         </div>
@@ -72,9 +91,9 @@
                 </svg>
 
                 <h2 class="text-xl font-medium">Large Assortment</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque possimus officiis omnis minus,
-                    nobis repellat voluptas laborum amet sint nihil velit, dolorem, aliquid aliquam et ducimus doloribus
-                    facere incidunt veritatis!</p>
+                <p>Discover a diverse selection of plants for every style and space! From easy-care succulents to lush
+                    indoor trees, we offer a wide range of options to suit any preference. Each plant is hand-selected
+                    for quality, so you can confidently find the perfect addition to your home or office.</p>
             </div>
             <div class="border border-black p-2 m-6">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -84,9 +103,9 @@
                 </svg>
 
                 <h2 class="text-xl font-medium">Free and Fast Shipping</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque possimus officiis omnis minus,
-                    nobis repellat voluptas laborum amet sint nihil velit, dolorem, aliquid aliquam et ducimus doloribus
-                    facere incidunt veritatis!</p>
+                <p>Enjoy swift and reliable shipping at no extra cost! We pack every order with care to ensure your
+                    plants arrive healthy and happy. Our fast shipping ensures that your new plants reach you quickly,
+                    ready to bring fresh beauty and life to your space.</p>
             </div>
             <div class="border border-black p-2 m-6">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -96,9 +115,9 @@
                 </svg>
 
                 <h2 class="text-xl font-medium">24/7 Support</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque possimus officiis omnis minus,
-                    nobis repellat voluptas laborum amet sint nihil velit, dolorem, aliquid aliquam et ducimus doloribus
-                    facere incidunt veritatis!</p>
+                <p>Experience peace of mind with our around-the-clock support! Our friendly team is here day and night
+                    to answer questions, provide guidance, and assist with orders. Whether you need plant care advice or
+                    help with your order, we're just a message away!</p>
             </div>
         </div>
     </section>
@@ -107,7 +126,7 @@
     <section class="p-4 text-center">
         <h1 class="font-bold mt-5 text-3xl">Best Seller</h1>
 
-        <div class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5">
+        <div class="grid grid-cols-2 md:grid-cols-5 mt-5 gap-5">
             <div class="">
                 <img src="./images/bs_1.jpg" alt="Best Seller 1"
                     class="inline hover:shadow-xl transform hover:-translate-y-2">
@@ -132,6 +151,12 @@
                 <h1>astilbe plant</h1>
                 <p>$20</p>
             </div>
+            <div>
+                <img src="./images/bs_5.jpg" alt="Best Seller 3"
+                    class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <h1>florist's cyclamen</h1>
+                <p>$20</p>
+            </div>
         </div>
     </section>
 
@@ -139,23 +164,23 @@
     <section class="p-4">
         <h1 class="text-3xl font-bold mt-5 text-center">Customer Reviews</h1>
 
-        <div class="flex flex-col justify-center m-5 gap-5 text-black">
-            <div class="bg-green-100 p-5 w-full">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat doloremque
-                    numquam magni vel magnam delectus eos voluptates odit voluptatum quisquam rerum quod totam sapiente
-                    itaque nostrum aliquid, quaerat nisi voluptas.</p>
+        <div class="flex flex-col justify-center m-5 gap-5 text-black md:flex-row">
+            <div class="bg-green-100 text-lg p-5 w-full">
+                <p><i>Greenden has truly transformed my home! The quality of the plants is outstanding, and they arrived
+                        perfectly packaged and healthy. I especially appreciate the care instructions that came with
+                        each plant—it's clear Greenden cares about both plants and customers!</i></p><br>
                 <p class="text-xl font-bold text-red-500">Genny Mathew</p>
             </div>
-            <div class="bg-green-100 p-5  w-full">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat doloremque
-                    numquam magni vel magnam delectus eos voluptates odit voluptatum quisquam rerum quod totam sapiente
-                    itaque nostrum aliquid, quaerat nisi voluptas.</p>
+            <div class="bg-green-100 text-lg p-5  w-full">
+                <p><i>I've ordered from Greenden twice now, and both experiences have been excellent. The plants are
+                        vibrant and exactly as pictured. Their customer service is responsive and friendly. Definitely
+                        my go-to shop for adding greenery to my apartment!</i></p><br>
                 <p class="text-xl font-bold text-red-500">Srikanth</p>
             </div>
-            <div class="bg-green-100 p-5  w-full">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat doloremque
-                    numquam magni vel magnam delectus eos voluptates odit voluptatum quisquam rerum quod totam sapiente
-                    itaque nostrum aliquid, quaerat nisi voluptas.</p>
+            <div class="bg-green-100 text-lg p-5  w-full">
+                <p><i>I couldn't be happier with my order from Greenden! My new plants are thriving and bring so much
+                        life to my workspace. The selection is diverse, and I found unique plants that I couldn't find
+                        anywhere else. Highly recommend!</i></p><br>
                 <p class="text-xl font-bold text-red-500">Amir</p>
             </div>
         </div>
@@ -167,17 +192,19 @@
         <p>SignUp for our email magazine to get exclusive discounts, updates and more</p>
         <div class="m-10">
             <input class="border border-black w-full p-2">
-            <button class="bg-black mt-5 p-4 text-white underline">Subscribe</button>
+            <button class="bg-black mt-5 p-4 rounded-3xl text-white underline hover:bg-gray-200 hover:text-black">Subscribe</button>
         </div>
     </section>
 
     <!--Footer-->
-    <footer class="bg-green-900 text-white p-4 ">
-        <h1 class="text-4xl font-bold mt-5 m-5">Greenden</h1>
-        <p class="m-5">The Standard chunk of Lorem ipsum since the 1500s is reprodused below for those interest</p>
+    <footer class="bg-green-900 text-white p-4 relative">
+        <h1 class="text-4xl font-bold mt-5 m-5 font-serif">Greenden</h1>
+        <p class="m-5">Discover the joy of green living with Greenden. Whether you're a seasoned plant parent or just
+            starting, we have something for everyone.</p>
         <div class="m-5">
-            <p>&copy;Greenday.com</p>
+            <p>&copy;2024 Greenden. Cultivating happiness.</p>
         </div>
+        <img src="./images/G_2.png" alt="Logo" class="absolute bottom-4 right-4 w-50 h-10">
     </footer>
 </body>
 

@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
     <title>Greenden</title>
+    <link rel="icon" href="./images/G_3.png">
     <script>
         function toggleMenu() {
             const menu = document.getElementById('dropdownMenu');
@@ -18,19 +22,34 @@
     <!--Responsive Navbar-->
     <nav class="bg-green-900 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
         <img class="md:hidden" src="./images/G_2sm.png">
-        <img class="hidden md:block" src="./images/G_2.png">
+        <img class="hidden md:block w-80 h-20" src="./images/G_2.png">
 
-        <button onclick="toggleMenu()" class="md:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-6 h-6 text-white">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
-        </button>
+        <!-- Menu icon for mobile screens -->
+        <div class="md:hidden flex justify-center gap-3  text-white">
+            <button onclick="toggleMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+            <a href="login.html"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="md:hidden w-8 h-8">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                </svg>
+            </a>
+        </div>
 
         <ul class="gap-5 text-white hidden md:flex">
             <li><a href="index.html" class="hover:underline hover:text-black text-2xl">Home</a></li>
             <li><a href="product.html" class="hover:underline hover:text-black text-2xl">Products</a></li>
             <li><a href="contact.html" class="hover:underline  hover:text-black text-2xl">Contact</a></li>
+            <li><a href="login.html"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                    </svg></a> </li>
         </ul>
         <!-- Dropdown Menu for small screens (hidden initially) -->
         <div id="dropdownMenu" class="hidden absolute text-white top-16 right-0 bg-green-800 p-4 rounded-lg shadow-lg">
@@ -70,19 +89,21 @@
                         placeholder="Leave a comment..."></textarea>
                 </div>
                 <button type="submit"
-                    class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send
+                    class="py-3 px-5 text-md font-medium text-center text-white rounded-lg bg-green-900 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send
                     message</button>
             </form>
         </div>
     </section>
 
     <!--Footer-->
-    <footer class="bg-green-900 text-white p-4 ">
-        <h1 class="text-4xl font-bold mt-5 m-5">Greenden</h1>
-        <p class="m-5">The Standard chunk of Lorem ipsum since the 1500s is reprodused below for those interest</p>
+    <footer class="bg-green-900 text-white p-4 relative ">
+        <h1 class="text-4xl font-bold mt-5 m-5 font-serif">Greenden</h1>
+        <p class="m-5">Discover the joy of green living with Greenden. Whether you're a seasoned plant parent or just
+            starting, we have something for everyone.</p>
         <div class="m-5">
-            <p>&copy;Greenday.com</p>
+            <p>&copy;2024 Greenden. Cultivating happiness.</p>
         </div>
+        <img src="./images/G_2.png" alt="Logo" class="absolute bottom-4 right-4 w-50 h-10">
     </footer>
 </body>
 
