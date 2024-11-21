@@ -24,13 +24,15 @@
         <!-- Menu icon for mobile screens -->
         <div class="md:hidden flex justify-center gap-3  text-white">
             <button onclick="toggleMenu()">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round"
                         d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                 </svg>
             </button>
-            <a href="login.html"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+
+            <a href="login.html">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                     stroke-width="1.5" stroke="currentColor" class="md:hidden w-8 h-8">
                     <path stroke-linecap="round" stroke-linejoin="round"
                         d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
@@ -50,13 +52,25 @@
         </ul>
 
 
-        <!-- Dropdown Menu for small screens (hidden initially) -->
-        <div id="dropdownMenu" class="hidden absolute text-white top-16 right-0 bg-green-800 p-4 rounded-lg shadow-lg">
+        <!-- Side Navbar -->
+        <!-- <div id="dropdownMenu" class="hidden absolute text-white top-16 right-0 bg-green-800 p-4 rounded-lg shadow-lg">
             <a href="index.html" class="block hover:underline hover:text-black text-xl py-2">Home</a>
             <a href="product.html" class="block hover:underline hover:text-black text-xl py-2">Products</a>
             <a href="contact.html" class="block hover:underline  hover:text-black text-xl py-2">Contact</a>
-        </div>
+        </div> -->
     </nav>
+
+    <!-- Side Navbar -->
+    <section id="sidenav" class="bg-green-800  text-white fixed z-20 top-0 transition-all duration-1000" style="width: 50%; height: 100vh; right: -50%;">
+        <div class="text-right p-5">
+            <p id="close-nav" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col gap-5 items-center">
+            <li><a href="index.html" class="hover:underline hover:text-black text-2xl">Home</a></li>
+            <li><a href="product.html" class="hover:underline hover:text-black text-2xl">Products</a></li>
+            <li><a href="contact.html" class="hover:underline  hover:text-black text-2xl">Contact</a></li>
+        </ul>
+    </section>
 
     <!--Header-->
     <section class="bg-green-900 text-white md:p-10 p-4 flex justify-center">
@@ -64,7 +78,8 @@
             <p class="mb-4">We Offer you a wide range of Artificial and Natural Flowers</p>
             <h2 class="font-bold text-3xl md:text-5xl mb-5">Plans for your Interior</h2>
             <div>
-                <a href="product.html"><button class="bg-yellow-400 rounded p-2 text-black hover:bg-gray-100">Shop Now</button></a>
+                <a href="product.html"><button class="bg-yellow-400 rounded p-2 text-black hover:bg-gray-100">Shop
+                        Now</button></a>
 
                 <a href="https://www.youtube.com/watch?v=NdVVFdeIMrE" target="_blank">
                     <button class="border border-gray-400 rounded p-2 hover:bg-black">Watch Video</button>
@@ -192,7 +207,8 @@
         <p>SignUp for our email magazine to get exclusive discounts, updates and more</p>
         <div class="m-10">
             <input class="border border-black w-full p-2">
-            <button class="bg-black mt-5 p-4 rounded-3xl text-white underline hover:bg-gray-200 hover:text-black">Subscribe</button>
+            <button
+                class="bg-black mt-5 p-4 rounded-3xl text-white underline hover:bg-gray-200 hover:text-black">Subscribe</button>
         </div>
     </section>
 
@@ -206,6 +222,8 @@
         </div>
         <img src="./images/G_2.png" alt="Logo" class="absolute bottom-4 right-4 w-50 h-10">
     </footer>
+
+    <script src="index.js"></script>
 </body>
 
 </html>
